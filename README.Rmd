@@ -4,7 +4,7 @@
 title: "README"
 author: "CHI YEUNG WONG"
 date: "2020-11-08"
-output: github_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
