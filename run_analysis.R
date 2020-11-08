@@ -1,3 +1,23 @@
+# ==============================================================================
+#
+# run_analysis.R
+#
+# This program is used for the course project of the 
+# "Getting and Cleaning Data" course.
+#
+# The objective of this program is 
+#
+# 1. Merges the training and the test sets to create a one data set.
+# 2. Extracts only the measurements on the mean and standard deviation of each measurement.
+# 3. Uses descriptive activity names to name the activities in the data set.
+# 4. Appropriately labels the data set with descriptive variable names.
+# 5. From the data set in step 4, creates a second, independent tidy data set 
+#    with the average of each variable for each activity and each subject.
+#
+# In addition, data will be downloaded and prepared before the above tasks to be
+# performed. The new dataset will be saved in a data file "tidy_data.txt".
+#
+# ==============================================================================
 
 
 # ===================
@@ -142,7 +162,7 @@ names(data.Extracted) <- gsub("-freq()", "Frequency", names(data.Extracted), ign
 
 data.Extracted$Subject <- as.factor(data.Extracted$Subject)
 
-# 2. calculate the avaerage for each subject and activity
+# 2. calculate the average for each subject and activity
 
 data.New <- aggregate(. ~Subject + Activity, data.Extracted, mean)
 data.New <- data.New[order(data.New$Subject, data.New$Activity),]
