@@ -32,7 +32,6 @@ Galaxy S smartphones which is provided from the course website as shown below:
 
 In order to complete this project, it is asked to
 
-
     1. Merges the training and the test sets to create a one data set.
     2. Extracts only the measurements on the mean and standard deviation of 
        each measurement.
@@ -41,11 +40,14 @@ In order to complete this project, it is asked to
     5. From the data set in step 4, creates a second, independent tidy data set 
        with the average of each variable for each activity and each subject.
     
+The tasks mentioned above will be implemented in a program file **run_analysis.R**
+and the new tidy dataset will be saved in a data file **tidy_data.txt**.
+
     
 ### Data Prepration
 
 Before we could perform any analysis, corresponding datasets will be downloaded
-from the course website as shown belwow:
+from the course website as shown below:
 
 ```{r data_download}
 data.url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"

@@ -440,9 +440,10 @@ summary {
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set 
    with the average of each variable for each activity and each subject.</code></pre>
+<p>The tasks mentioned above will be implemented in a program file <strong>run_analysis.R</strong> and the new tidy dataset will be saved in a data file <strong>tidy_data.txt</strong>.</p>
 <div id="data-prepration" class="section level3">
 <h3>Data Prepration</h3>
-<p>Before we could perform any analysis, corresponding datasets will be downloaded from the course website as shown belwow:</p>
+<p>Before we could perform any analysis, corresponding datasets will be downloaded from the course website as shown below:</p>
 <pre class="r"><code>data.url &lt;- &quot;https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip&quot;
 download.file(data.url, destfile = &quot;./data/Dataset.zip&quot;, method = &quot;curl&quot;)
 unzip(zipfile = &quot;./data/Dataset.zip&quot;, exdir = &quot;./data&quot;)</code></pre>
