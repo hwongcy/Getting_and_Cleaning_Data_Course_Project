@@ -729,7 +729,12 @@ data.New <- aggregate(. ~Subject + Activity, data.Extracted, mean)
 data.New <- data.New[order(data.New$Subject, data.New$Activity),]
 ```
 
-The new tidy dataset, *data.New*, will look like
+The dimension of the new tidy dataset, *data.New*, after *aggregate* will be
+```{r dimension_of_new_dataset}
+## [1] 180  88
+```
+
+And it will look like
 ```{r list_new_dataset}
 ## 'data.frame':    180 obs. of  88 variables:
 ##  $ Subject                                          : Factor w/ 30 levels "1","2","3","4",..: 1 1 1 1 1 1 2 2 2 2 ...
