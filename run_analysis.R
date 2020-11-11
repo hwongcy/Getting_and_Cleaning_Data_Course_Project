@@ -37,6 +37,18 @@ unzip(zipfile = "./data/Dataset.zip", exdir = "./data")
 
 # 2. Reading training Data
 
+# According to the **README.txt** from the dataset, it is found that 
+# below data files will be used:
+    
+# - feature.txt:           List of all features
+# - activity_labels.txt:   Activity names
+# - train/X_train.txt:     Training dataset of features
+# - train/y_train.txt:     Training dataset of activities
+# - train/subject_train:   Training dataset of subjects
+# - test/X_test.txt:       Test dataset of features
+# - test/y_test.txt:       Test dataset of activities
+# - test/subject_test.txt: Test dataset of subjects
+
 train.subject <- read.table("data/UCI HAR Dataset/train/subject_train.txt", header = FALSE)
 train.activity <- read.table("data/UCI HAR Dataset/train/y_train.txt", header = FALSE)
 train.features <- read.table("data/UCI HAR Dataset/train/X_train.txt", header = FALSE)
