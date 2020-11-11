@@ -37,7 +37,7 @@ unzip(zipfile = "./data/Dataset.zip", exdir = "./data")
 
 # 2. Reading training Data
 
-# According to the **README.txt** from the dataset, it is found that 
+# According to the README.txt from the dataset, it is found that 
 # below data files will be used:
     
 # - feature.txt:           List of all features
