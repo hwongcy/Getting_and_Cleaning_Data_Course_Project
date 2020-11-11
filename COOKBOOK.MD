@@ -827,7 +827,7 @@ And it will look like
 ##  $ Angle(Z,GravityMean)                             : num  -0.3524 -0.218 0.0123 0.0689 0.065 ...
 ```
 
-The new tidy dataset will be saved in a new data file **tidy_data.txt** under the current directory.
+Finally, the new tidy dataset will be saved in a new data file **tidy_data.txt** under the current directory.
 
 ```{r write_data_file}
 write.table(data.New, file = "tidy_data.txt", row.names = FALSE)
